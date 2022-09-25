@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+
+  font-size: 2rem;
+  padding: 0.5em;
+}
+button:hover {
+  cursor: pointer;
+}
+button.plus,
+button.minus {
+  width: 5rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+button.reset {
+  margin-top: 5px;
+  padding: 1rem 3rem;
+  background: #ccc;
+  border: 1px solid #ccc;
+}
+.result {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #33a9ad;
+  margin: 30px;
+}
+.counter-select {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+}
+.counter-select::before {
+  position: absolute;
+  top: 1em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+select {
+  width: 100%;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+select::-ms-expand {
+  display: none;
+}
